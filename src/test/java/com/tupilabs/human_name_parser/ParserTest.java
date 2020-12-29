@@ -60,7 +60,7 @@ public class ParserTest {
 
                 String[] tokens = line.split("\\|");
                 if (tokens.length != 9) {
-                    LOGGER.warning(String.format("Invalid line in testNames.txt: %s", line));
+                    LOGGER.warning(String.format("Invalid line in testNames.txt (found %d of 9 tokens): %s", tokens.length, line));
                     continue;
                 }
 
